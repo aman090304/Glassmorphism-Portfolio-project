@@ -1,0 +1,437 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background:linear-gradient(to bottom,rgb(187, 147, 255),rgb(255, 255, 255) 50%,rgb(183, 255, 255) 100%); */
+    background-repeat: none;
+    background-position: center;
+    /* background-size:cover; */
+}
+
+/* Header Styling */
+header {
+    background-color: transparent;
+    background-color: rgba(37, 37, 37, 0.203);
+    backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
+    padding:  0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 0.5rem;
+}
+header h1{
+
+    font-size: x-large;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    padding: 1.5rem 0.5rem 0.5rem 4rem;
+}
+nav ul {
+    list-style: none;
+    margin-left: 80%;
+    margin: 0;
+    padding: 0;
+    padding-right: 2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:blueviolet;
+}
+
+
+/* Animations */
+.animated {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section Styling */
+.section1 {
+    background-image: url(bg.webp);
+
+    height: 120vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    top: 15%;
+    align-items: center;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card{
+    /* background-color: rgba(255, 255, 255, 0.132); */
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+}
+
+
+.block1{
+    width: 30%;
+    top: 15%;
+    position: absolute;
+}
+.block1 h1{
+    color: rgb(239, 239, 239);
+}
+.block1 p{
+    color: rgba(240, 248, 255, 0.532);
+}
+.block1 img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+.block2{
+    width: 14rem;
+    height: 20%;
+    justify-content: space-between;
+    position:absolute;
+    top:15%;
+    /* margin: 20px; */
+    margin-left: 30.5%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+}
+.block2 .card:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+    size: fixed;
+    padding: 20px;
+}
+.block2 .card:nth-child(1) img{
+    border-radius: 7px;
+}
+
+.block2 .card:nth-child(2){
+    background-color: rgb(36, 36, 36);
+    transition: 200ms;
+    size: fixed;
+    
+}
+.block2 .card:nth-child(3){
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+}
+.carousel {
+    padding: 8px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    width: 13rem;
+}
+.carousel button{
+    display: none;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 170px;
+    border-radius: 15px;
+}
+
+.block3{
+    position: absolute;
+    width: 25rem;
+    position:absolute;
+    margin-left: 45.7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    top: 15%;
+}
+.block3 .card:nth-child(1){
+    background-color: #3a3838;
+    color: white;
+    padding: 0;
+}
+.block3 .card:nth-child(1) h3{
+    background-color: rgb(232, 232, 1);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 5px 5px 5px 25px;
+    color: black;
+}
+.block3 .card:nth-child(1) ul{
+    list-style-type: square;
+    line-height: 31px;
+    
+}
+
+.block3 .card:nth-child(1) h3::after{
+    content: ' \2705';
+}
+
+
+.block3 .card:nth-child(2){
+    padding: 0;
+    background-color: rgba(245, 245, 245, 0.916);
+    
+}
+
+.block3 .card:nth-child(2) h3{
+    background-color: rgb(138, 89, 253);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 5px 5px 5px 30px;
+    color: white;
+    letter-spacing: 0.7px;
+    
+    
+}
+.block3 .card:nth-child(2) h3::after{
+    content: '    \1F4C1  ';
+    
+}
+.block3 .card:nth-child(2) ul{
+    list-style-type: none;
+    
+    line-height: 31px;
+    
+}
+.music{
+    position: absolute;
+    top: 66%;
+    width: 68.6rem;
+    /* background-color: black; */
+    /* color: white; */
+}
+.music .card{
+    background-color: #000;
+    color: whitesmoke;
+    display: flex;
+    height: 150px;
+    padding: 0rem 0rem 1rem 2rem;
+}
+.music h3{
+    /* position: absolute; */
+    padding-left: 7rem;
+    padding-top: 2.5rem;
+}
+.music .icon{
+    position: absolute;
+    padding-top: 1.5rem;
+}
+.music p{
+    opacity: 0.6;
+    position: absolute;
+    top:70px;
+    padding-left: 7rem;
+}
+
+.music h3::after{
+    content: '\25B6';
+    /* position: absolute; */
+    display: flex;
+    padding-right: 4rem;
+    font-size: 50px;
+    justify-content: end;
+    justify-items: end;
+}
+
+.clock {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
+
+/* <---------------------ALL ABOUT SECTION 2 --------------------> */
+
+
+.section2 {
+    height: 100vh;
+    display: flex;
+    background-image: url(bg.webp);
+    justify-content: center;
+    color: whitesmoke;
+    scroll-snap-align: start;
+}
+.section2 .content h1{
+    margin-top: 7%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+.section2 .content .inside{
+    display: flex;
+    gap: 40px;
+    
+
+}
+.section2 .card{
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    overflow: hidden;
+    transition:400ms;
+}
+
+.section2 .card h3{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: -100%;
+    overflow: hidden;
+    text-shadow: 0 0 15px #ffffff;
+}
+.section2 .card::before{
+    content: url(vector.svg);
+    position: absolute;
+    /* backdrop-filter: blur(2px); */
+    
+    background-color: transparent;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transition: 400ms;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 400ms;
+}
+
+.section2 .card:nth-child(1):hover h3{
+    transform: scaleX(1);
+    transition: 400ms;
+    left: 0;
+    z-index: 4;
+    /* text-shadow: 0 0 10px #fefefe; */
+
+}
+.section2 .card:nth-child(2):hover h3{
+    transform: scaleX(1);
+    transition: 400ms;
+    left: 0;
+    z-index: 4;
+}
+.section2 .card:nth-child(3):hover h3{
+    transform: scaleX(1);
+    transition: 400ms;
+    left: 0;
+    z-index: 4;
+}
+.section2 .card:nth-child(1):hover::before{
+    transform: scaleX(1);
+}
+
+.section2 .card:nth-child(2):hover::before{
+    transform: scaleX(1);
+
+
+}
+.section2 .card:nth-child(3):hover::before{
+    transform: scaleX(1);
+
+
+}
+.section2 .card img{
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 400ms;
+    transition-delay: 100ms;
+
+}
+
+.section2 .card:nth-child(1):hover img{
+    transform: scale(1.6);
+    transition: 400ms;
+    filter: blur(2px);
+}
+.section2 .card:nth-child(2):hover img{
+    transform: scale(1.6);
+    transition: 400ms;
+    filter: blur(2px);
+}
+.section2 .card:nth-child(3):hover img{
+    transform: scale(1.6);
+    transition: 400ms;
+    filter: blur(2px);
+}
+footer{
+    background-image: url(bg.webp);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 35vh;
+    padding-top: 5rem;
+    background-color: #1e1e1e;
+    position: relative;
+    /* backdrop-filter: blur(2px); */
+}
+.footer .address{
+    padding-left: 10%;
+    color: whitesmoke;
+
+}
+.footer .address h3{
+    font-size: 40px;
+
+}
+.footer .address p{
+    opacity: 0.6;
+}
+.footer .contact{
+    padding-right: 30%;
+}
+.divider{
+    position: inherit;
+    left: 3.2rem;
+    width: 1px;
+    background-color: #ffffff;
+}
+
+.footer .contact ul li a {
+    color: white;
+    text-underline-offset: 5px;
+}
+    .footer .contact ul {
+    line-height: 50px;
+    list-style: none;
+}
+
